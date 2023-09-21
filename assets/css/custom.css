@@ -1,0 +1,182 @@
+.restaurant-dropdown {
+  display: grid;
+}
+
+.option-restaurant {
+  height: 50px;
+  text-align: center;
+}
+
+.contact-form .form-control:active,
+.contact-form .form-control:focus,
+.contact-form .form-control:hover,
+.contact-form .form-select:active,
+.contact-form .form-select:focus,
+.contact-form .form-select:hover {
+  border-color: var(--bs-primary);
+}
+.scrollable-form {
+  max-height: 600px; /* adjust the height as needed */
+  overflow-y: scroll; /* this will make the div scrollable with a visible scrollbar */
+  scrollbar-width: none; /* hide the scrollbar */
+  -ms-overflow-style: none; /* hide the scrollbar for Edge and IE */
+}
+
+.scrollable-form::-webkit-scrollbar {
+  width: 1px; /* hide the scrollbar for Chrome, Safari, and Opera */
+}
+
+form {
+  margin-top: 50px;
+}
+
+#error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  /* display: none; */
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.section-title img {
+  width: 30px;
+  height: 29px;
+  margin-right: 22px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span.color-orange-text {
+  color: #ffa101;
+}
+
+.footer-widget.mt-3 li,
+.footer-widget.mt-3 a {
+  color: #000;
+}
+
+ul.footer-list.list-inline.m-0 li {
+  color: #fffbfb;
+}
+
+.footer-slogan {
+  color: #fffbfb;
+}
+
+.facebooklogo {
+  width: 20px;
+}
+
+.shop-box {
+  height: auto;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
+
+.tooltipNew {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltipNew .tooltiptextNew {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-left: -85px;
+  text-align: left;
+}
+.tooltipNew:hover .tooltiptextNew {
+  visibility: visible;
+}
+
+
+.menu {
+  display: flex;
+  justify-content:flex-start;
+  margin-right: 20px;
+}
+
+.menu span {
+  margin-right: 20px;
+}
+
+.shop-bottom2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-TOP: 100px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu span {
+  position: relative;
+  /* padding: 10px; */
+  cursor: pointer;
+  display: flex;
+}
+
+.menu-details {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 10 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.menu span:hover .menu-details {
+  display:inline-block;
+}
+
+.all-restorant h6{
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px 2px black;
+  font-size: 2em;
+}
+
+.all-restorant ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.all-restorant ul li {
+  list-style: none;
+}
+.all-restorant ul li a {
+  padding: 7px 13px;
+  margin: 0px 10px;
+  background: antiquewhite;
+  color: #000;
+}

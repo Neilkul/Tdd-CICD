@@ -1,0 +1,168 @@
+.order-icon-shape{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    width: 45vmax;
+    height: 100%;
+    z-index: -1; 
+     .order-shape-item{ 
+       position: absolute!important;
+    }
+    .shape-1{
+           top: calc(50% - 175px)!important;
+          right: 80%!important; 
+        img{
+           max-height: 155px; 
+           animation: animate_1 backwards 12s ease-out infinite;
+        }
+    }
+    .shape-2{
+        top: calc(50% - 220px)!important;
+        right: 60%!important;   
+        img{
+           max-height: 53px;  
+           animation: animate_1 backwards 15s ease-out infinite;
+        }
+    }
+    .shape-3{
+      top: calc(50% - 175px)!important;
+      right: 20%!important; 
+        img{ 
+           max-height: 63px;
+           animation: animate_1 alternate 18s ease-out infinite;
+        }
+    }
+    .shape-4{
+      top: calc(50% - 220px)!important;
+      right: 10%!important;
+        img{
+           max-height: 52px;
+           animation: animate_1 backwards 20s ease-out infinite;
+        }
+    }	
+  
+  } 
+.order-box-shape{
+   position: relative;
+   overflow: hidden; 
+   &::before{
+    content: "";
+    background-color: rgba($primary, 0.05);
+    border: 10px solid transparent;
+    border-image: url(../images/border-shape.svg) 12 stretch; 
+    border-radius: $border-radius; 
+    width: 45vmax; 
+    height: 415px; 
+    display: block;
+    position: absolute; 
+    bottom: 7rem; 
+    left: 0;
+    margin: auto; 
+    z-index: -1;
+   }
+   &::after{
+    content: "";
+    background-image: url(../images/order-pizza-image.svg);
+    border-radius: $border-radius; 
+    width: 160px; 
+    height:148px; 
+    display: block;
+    position: absolute; 
+    bottom: 8rem; 
+    left: 160px;
+    margin: auto; 
+    z-index: -1;
+   }
+}
+.order-delivery-man{ 
+    transform: translate(-155px,150px);  
+   img{
+      min-height: 720px; 
+      max-width: 674px;   
+      object-fit: cover; 
+   }
+} 
+ 
+.order-step-box{
+    background-image: var(--bs-white); 
+    padding:50px 30px; 
+    position: relative;
+    height: 100%;
+    &::before { 
+  
+ 
+        font-family: $custom-font-family;
+        font-size: 52px;  
+        line-height: 0;
+        position: absolute;
+        right: 5rem;  
+        top: 5rem; 
+        transition: all 300ms ease-out ;
+    } 
+    .order-step-icon{
+        display: inline-block;  
+        position: relative;
+        img{
+            height: 56px;  
+            transition: transform 300ms ease-out;
+        }
+        &::before{
+            content: url(../images/icon-bg-shape.svg);
+            position: absolute; 
+           
+        }
+    } 
+    &.border-end{ 
+        border-right: 1px solid $border-light-color !important;
+     
+    }
+    &:hover{
+        .order-step-icon{
+          img{
+                transform: translate(10px, -10px); 
+            }  
+        }
+        &::before {
+            font-size: 95px; 
+            margin-left: 1px;
+            right: 2rem; 
+            top: 5rem;    
+         }
+         box-shadow: $box-shadow-lg;
+    }
+}
+.order-outline-box{
+    background-color: var(--bs-white);
+  border: 1px solid $border-light-color;
+    padding:24px; 
+    display: flex;
+    align-items: center;
+    transition: box-shadow 300ms ease-out, transform 300ms ease-out;
+ 
+    .order-outline-content{  
+        width: calc(100% - 54px); 
+        padding-left: 40px; 
+    }
+    &:hover {
+        img{
+            transform: translate(10px, -10px);
+          
+        }
+       box-shadow: $box-shadow-lg;
+    }
+}
+.order-outline-icon{  
+    position: relative;
+    img{
+        height:60px;  
+        transition: transform 300ms ease-out; 
+    }
+    &::before{
+        content: url(../images/icon-bg-shape.svg);
+        position: absolute; 
+       
+    }
+    
+}

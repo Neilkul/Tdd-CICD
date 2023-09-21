@@ -1,0 +1,37 @@
+.newsletter-box{
+    background-color: rgba($primary, 0.05); 
+    padding: 56px;
+    border: 10px solid transparent;
+    border-image: url(../images/border-shape.svg) 12 stretch; 
+    border-radius: $border-radius; 
+    .newsletter-image{
+        img{ 
+            max-height: 185px; 
+        }
+    }
+    .newsletter-content{
+        .small{
+           opacity: 0.7; 
+        }
+    }
+}
+.newsletter-form{ 
+	max-width: 480px; 
+    background-color: var(--bs-white);  
+    border-radius: $border-radius-lg; 
+    position: relative;
+	.input-group{
+		flex-wrap: nowrap; 
+	}
+	select,input{
+       border-radius: $border-radius-lg !important;
+       background-color:transparent; 
+       border:1px solid $input-border-color; 
+       padding-right: 200px !important;    
+	} 
+	button{ 
+         position: absolute!important; 
+         right: 0;
+         border-radius: $border-radius-lg!important; 
+	}
+} 

@@ -1,0 +1,58 @@
+.team-box{
+    position: relative;
+    border-radius: $border-radius;
+    overflow: hidden; 
+    > img{
+        width: 100%;
+        height: 445px;
+        object-fit: cover;
+        object-position: top;
+    } 
+    .team-zoom{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; 
+      background-color: rgba($primary, 0.5); 
+      box-shadow: $box-shadow-sm;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 300ms ease-out; 
+      .team-plus{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto; 
+          width: 72px;
+          height: 72px;  
+          padding-top: 40px; 
+          transition: padding-top 300ms ease-out; 
+      }
+    }
+    .team-content{
+        min-width: 180px;
+        position: absolute;
+        bottom: 48px;
+        left: 0; 
+        background-color: var(--bs-white);
+        padding: 16px;
+        border-top-right-radius:$border-radius-sm;
+        border-bottom-right-radius:$border-radius-sm;
+        transition: left 300ms ease-out;
+    }
+    &:hover{
+        .team-zoom{
+            opacity: 1;
+            visibility: visible;
+            .team-plus{
+                padding-top: 0;
+            }
+        }
+        .team-content{ 
+            left: -100%;
+        }
+    }
+}

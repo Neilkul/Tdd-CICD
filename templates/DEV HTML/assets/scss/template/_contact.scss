@@ -1,0 +1,86 @@
+/*
+==========================================
+    Contact Area
+==========================================
+*/   
+@-webkit-keyframes message {
+
+    10%,
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      transform: translateY(-5px);
+      opacity: 0;
+    }
+  }
+  @keyframes message {
+  
+    10%,
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      transform: translateY(-5px);
+      opacity: 0;
+    }
+  }  
+.contact-form{
+    .form-control,.form-select{    
+        padding: 13px 20px;
+        border-radius:$border-radius-sm;   
+        transition: border-color 300ms ease-out;  
+        &:focus,&:active,&:hover{
+            border-color:var(--bs-primary); 
+        }
+    } 
+    .form-select{
+        background-image: url(../images/icon-down.svg);
+        color: rgba($secondary, 0.55); 
+        option{
+            color:var(--bs-secondary);  
+        }
+    }
+} 
+.contact-info{
+    border: 1px solid $border-light-color; 
+    position: relative;
+    border-radius: $border-radius;
+    padding: 60px 30px; 
+    .contact-icon{
+        img{
+            height: 74px; 
+        }
+    }
+}
+.contact-man-image {
+    top: 90px;
+    right: -60px;
+    position: relative; 
+}
+.contact-message-image {  
+    li{
+        &:nth-child(1) {
+            animation: message 4s infinite;
+            animation-delay: 1000ms;
+            transition: 300ms ease-out; 
+        }
+        &:nth-child(2) {
+            animation: message 4s infinite;
+            animation-delay: 2000ms;
+            transition: 300ms ease-out;
+            position: relative;
+            left: 170px; 
+        }
+        &:nth-child(3) {
+            animation: message 4s infinite;
+            animation-delay: 3000ms;
+            transition: 300ms ease-out;
+        }
+    }
+}
+
+
+  
